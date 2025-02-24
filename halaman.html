@@ -7,22 +7,31 @@
     <style>
         body {
             background-color: rgb(132, 202, 179);
+            display: flex;
+            flex-direction: column; /* Menyusun elemen secara vertikal */
+            justify-content: center; /* Pusatkan vertikal */
+            align-items: center; /* Pusatkan horizontal */
+            height: 100vh; /* Pastikan tinggi body sesuai viewport */
+            margin: 0;
         }
+
 
         .search {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: -50px;
         }
 
         .search input {
             font-size: 16px;
             border: none;
-            width: 400px;
+            width: 300px;
             height: 50px;
             border-radius: 5px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             padding-left: 20px;
+         
         }
 
         .search p {
@@ -30,14 +39,27 @@
             margin-left: 10px;
             color: #fff;
         }
+
+        /* ISI */
+        .isi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            width: 375px;
+            height: 700px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="search">
         <input type="text" placeholder="Search...">
-       
             <p>⌕</p>
-       
+    </div>
+
+    <div class="isi">
+
     </div>
 </body>
 </html>
